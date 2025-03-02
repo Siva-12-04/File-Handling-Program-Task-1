@@ -32,29 +32,42 @@ Understand the implications of overwriting (existing content is replaced with ne
 The main function demonstrates these operations sequentially:
 
 It creates and writes to a file.
+
 Reads and displays its content.
+
 Appends additional content and displays the updated file.
+
 Overwrites the content and shows the final result.
+
 The program illustrates key concepts in file manipulation such as using different file modes ("w", "r", "a"), handling errors with perror(), and performing sequential file operations. The result is a simple, practical example of file I/O in C.
 
 conclusion:
 
 Initially, the content written to the file is shown after the file is created.
+
 After appending, the new content is displayed when the file is read again.
+
 Finally, after overwriting, the content is updated and displayed.
+
 File created and initial content written. 
 
 Output: 
 
 Contents of the file:
+
 This is the initial content of the file.
 
 Content appended to the file.
+
 Contents of the file:
+
 This is the initial content of the file.
+
 This is additional content appended to the file.
 
 File overwritten with new content.
+
 Contents of the file:
+
 This is the new content written to the file.
 
