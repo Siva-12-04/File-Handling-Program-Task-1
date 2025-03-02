@@ -11,7 +11,8 @@ DURATION : FEBRUARY 5th, 2025 to MARCH 5th, 2025 (4 WEEKS)
 
 MENTOR : NEELA SANTHOSH
 
-Objective:
+OBJECTIVE:
+
 1)File Creation:
 Learn how to create a new file or overwrite an existing file using the "w" file mode.
 Understand how to write initial content to a newly created file.
@@ -41,7 +42,7 @@ Overwrites the content and shows the final result.
 
 The program illustrates key concepts in file manipulation such as using different file modes ("w", "r", "a"), handling errors with perror(), and performing sequential file operations. The result is a simple, practical example of file I/O in C.
 
-conclusion:
+CONCLUSION:
 
 Initially, the content written to the file is shown after the file is created.
 
@@ -51,7 +52,7 @@ Finally, after overwriting, the content is updated and displayed.
 
 File created and initial content written. 
 
-Output: 
+OUTPUT: 
 
 Contents of the file:
 
