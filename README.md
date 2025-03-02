@@ -37,9 +37,9 @@ conclusion:
 Initially, the content written to the file is shown after the file is created.
 After appending, the new content is displayed when the file is read again.
 Finally, after overwriting, the content is updated and displayed.
-File created and initial content written.
-Output: 
+File created and initial content written. 
 
+Output: 
 Contents of the file:
 This is the initial content of the file.
 
