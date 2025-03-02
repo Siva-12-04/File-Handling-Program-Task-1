@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void createAndWriteFile(const char *filename) {
+    FILE *file = fopen(filename, "w"); // Create or overwrite the file
+    if (file == NULL) {
+        perror("Error creating file");
+        return;
+    }
+   
+    fprintf(file, "This is the initial content of the file.\n");
+    fclose(file);
+    printf("File created and initial content written.\n");
+}
+
+void readFile(const char *filename) {
+    char buffer[255];
+    FILE *file = fopen(filename, "r"); // Open the file for reading
+    if (file == NULL) {
+        perror("Error reading file");
+        return;
+    }
+    printf("Contents of the file:\n");
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
+        printf("%s", buffer);
+    }
+    fclose(file);
+}
+
+void appendToFile(const char *filename) {
+    FILE *file = fopen(filename, "a"); // Open the file for appending
+    if (file == NULL) {
+        perror("Error opening file for appending");
+        return;
+    }
+    fprintf(file, "This is additional content appended to the file.\n");
+    fclose(file);
+    printf("Content appended to the file.\n");
+}
+
+void writeFile(const char *filename) {
+    FILE *file = fopen(filename, "w"); // Open the file for writing (this will overwrite the file)
+    if (file == NULL) {
+        perror("Error opening file for writing");
+        return;
+    }
+    fprintf(file, "This is the new content written to the file.\n");
+    fclose(file);
+    printf("File overwritten with new content.\n");
+}
+
+int main() {
+    const char *filename = "example.txt";
+
+    createAndWriteFile(filename);
+
+    readFile(filename);
+
+    appendToFile(filename);
+
+    readFile(filename);
+
+    writeFile(filename);
+
+    // Step 6: Read the contents of the file after overwriting
+    readFile(filename);
+
+    return 0;
+}
