@@ -1,0 +1,10 @@
+File created and initial content written.
+Contents of the file:
+This is the initial content of the file.
+Content appended to the file.
+Contents of the file:
+This is the initial content of the file.
+This is additional content appended to the file.
+File overwritten with new content.
+Contents of the file:
+This is the new content written to the file.
